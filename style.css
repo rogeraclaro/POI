@@ -249,7 +249,7 @@ Required WordPress CSS
 
 .cinquena-text-layer > .row {
 	background: rgba(0, 0, 0, 0.6);
-	padding: 5rem;
+	padding: 3rem 0rem;
 }
 
 /* Remove trailing paragraph margins so blocks end at their last line */
