@@ -821,7 +821,7 @@ div[id^="video"] .plyr {
 	font-size: 64px;
 	line-height: 30px;
 	color: #e4e1ce;
-	margin-left: -12px;
+	margin-left: 0;
 }
 
 .text_adresa {
