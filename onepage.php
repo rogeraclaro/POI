@@ -374,7 +374,7 @@ $(document).ready(function(){
 		$('.cinquena-video-layer').css({ opacity: 1, 'pointer-events': 'auto' });
 		textFadeTimer = setTimeout(function() {
 			$('.cinquena-text-layer').css({ opacity: 0, 'pointer-events': 'none' });
-		}, 15000);
+		}, 60000);
 	}
 
 	function startVideoSequence() {
