@@ -375,7 +375,7 @@ $(document).ready(function(){
 		}
 		// Crossfade: vídeo apareix, textos queden per sobre 2s més
 		$('.cinquena-video-layer').css({ opacity: 1, 'pointer-events': 'auto' });
-		textFadeTimer = setTimeout(collapseText, 5000);
+		textFadeTimer = setTimeout(collapseText, 10000);
 	}
 
 	// Intro text box: slide down to close, arrow to slide it back up
