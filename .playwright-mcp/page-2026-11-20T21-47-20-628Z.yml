@@ -1,0 +1,47 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e6]:
+      - link [ref=e8] [cursor=pointer]:
+        - /url: "#menu"
+      - generic [ref=e12]:
+        - link "ES" [ref=e13] [cursor=pointer]:
+          - /url: https://poi.masellas.info/
+        - text: ·
+        - link "EN" [ref=e14] [cursor=pointer]:
+          - /url: https://poi.masellas.info/en/
+    - paragraph [ref=e19]: PERSONA(S) DE INTERÉS ES UN PROYECTO SOBRE LAS PEQUEÑAS HISTORIAS QUE CADA DÍA PROTAGONIZAN LOS MIEMBROS DE LA COMUNIDAD LATINA DE NUEVA YORK
+    - generic [ref=e20]: A través de estos breves perfiles, el espacio trata de reflejar la diversidad y la vitalidad de un colectivo que se ha convertido en el verdadero motor de la ciudad.
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27] [cursor=pointer]
+        - generic [ref=e28] [cursor=pointer]: Esconder marcadores
+      - generic [ref=e29]:
+        - generic [ref=e30] [cursor=pointer]
+        - generic [ref=e31] [cursor=pointer]: Mostrar marcadores
+    - text:                              
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - paragraph [ref=e38]:
+          - strong [ref=e39]: "Producción y realización:"
+        - paragraph [ref=e40]: Pablo Bujosa Rodríguez
+        - paragraph [ref=e41]
+        - paragraph [ref=e42]:
+          - strong [ref=e43]: "Contacto:"
+        - paragraph [ref=e44]:
+          - link "aleproduccions@gmail.com" [ref=e45] [cursor=pointer]:
+            - /url: mailto:aleproduccions@gmail.com
+      - generic [ref=e46]:
+        - paragraph [ref=e47]:
+          - strong [ref=e48]: "Documentación:"
+        - paragraph [ref=e49]: Juan Carlos Moraga Vidal
+        - paragraph [ref=e50]: Philip Klint
+        - paragraph [ref=e51]: René Cordero
+        - paragraph [ref=e52]
+        - paragraph [ref=e53]:
+          - strong [ref=e54]: "Diseño gráfico:"
+        - paragraph [ref=e55]: Paadín
+        - paragraph [ref=e56]
+        - paragraph [ref=e57]:
+          - strong [ref=e58]: "Programación:"
+        - paragraph [ref=e59]: Roger Masellas
+  - contentinfo [ref=e60]

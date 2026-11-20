@@ -385,7 +385,7 @@ $(document).ready(function(){
 		clearTimeout(textFadeTimer);
 		$('.cinquena-video-layer').css({ opacity: 0, 'pointer-events': 'none' });
 		$('.cinquena-text-layer').css({ opacity: 1, 'pointer-events': 'auto' });
-		videoSequenceTimer = setTimeout(triggerVideoTransition, 15000);
+		triggerVideoTransition();
 	}
 
 	function resetVideoSequence() {
