@@ -252,6 +252,11 @@ Required WordPress CSS
 	padding: 5rem;
 }
 
+/* Remove trailing paragraph margins so blocks end at their last line */
+.cinquena-text-layer p:last-child {
+	margin-bottom: 0;
+}
+
 .cinquena-video-layer {
 	position: absolute;
 	top: 0;

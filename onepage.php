@@ -101,12 +101,12 @@ body {
 						<?php while ( have_rows('locations') ) : the_row(); ?>
 							<div class="container_video<?php the_sub_field('numero'); ?>">
 								<div class="col-md-1"></div>
-								<div class="col-md-1">
+								<div class="col-md-2">
 									<div class="text_titol"><p><?php the_sub_field('title'); ?></p></div>
 									<div class="text_num"><p><?php the_sub_field('numero'); ?></p></div>
 									<div class="text_adresa"><?php the_sub_field('direccion'); ?></div>
 								</div>
-								<div class="col-md-9">
+								<div class="col-md-8">
 									<div class="text_resum"><?php the_sub_field('description'); ?></div>
 								</div>
 								<div class="col-md-1"></div>
