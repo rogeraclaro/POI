@@ -97,6 +97,7 @@ body {
 		    <!-- Capa de text -->
 		    <div class="cinquena-text-layer">
 				<div class="row">
+					<button type="button" class="cinquena-text-close" aria-label="<?php esc_attr_e( 'Close' ); ?>"><i class="fa fa-times" aria-hidden="true"></i></button>
 					<?php if( have_rows('locations') ): ?>
 						<?php while ( have_rows('locations') ) : the_row(); ?>
 							<div class="container_video<?php the_sub_field('numero'); ?>">
@@ -115,6 +116,8 @@ body {
 					<?php endif; ?>
 				</div>
 			</div>
+
+			<button type="button" class="cinquena-text-open" aria-label="<?php esc_attr_e( 'Show' ); ?>"><span class="flamunt"></span></button>
 
 			<!-- Capa de vídeo -->
 			<div class="cinquena-video-layer">
@@ -372,16 +375,34 @@ $(document).ready(function(){
 		}
 		// Crossfade: vídeo apareix, textos queden per sobre 2s més
 		$('.cinquena-video-layer').css({ opacity: 1, 'pointer-events': 'auto' });
-		textFadeTimer = setTimeout(function() {
-			$('.cinquena-text-layer').css({ opacity: 0, 'pointer-events': 'none' });
-		}, 60000);
+		textFadeTimer = setTimeout(collapseText, 60000);
+	}
+
+	// Intro text box: slide down to close, arrow to slide it back up
+	var textToggleTimer = null;
+
+	function collapseText() {
+		clearTimeout(textFadeTimer);
+		clearTimeout(textToggleTimer);
+		$('.cinquena-text-layer').addClass('is-collapsed').css('pointer-events', 'none');
+		// Show the arrow once the box has finished sliding out
+		textToggleTimer = setTimeout(function() {
+			$('.cinquena-text-open').addClass('is-visible');
+		}, 600);
+	}
+
+	function expandText() {
+		clearTimeout(textFadeTimer);
+		clearTimeout(textToggleTimer);
+		$('.cinquena-text-open').removeClass('is-visible');
+		$('.cinquena-text-layer').removeClass('is-collapsed').css({ opacity: 1, 'pointer-events': 'auto' });
 	}
 
 	function startVideoSequence() {
 		clearTimeout(videoSequenceTimer);
 		clearTimeout(textFadeTimer);
 		$('.cinquena-video-layer').css({ opacity: 0, 'pointer-events': 'none' });
-		$('.cinquena-text-layer').css({ opacity: 1, 'pointer-events': 'auto' });
+		expandText();
 		triggerVideoTransition();
 	}
 
@@ -389,9 +410,12 @@ $(document).ready(function(){
 		clearTimeout(videoSequenceTimer);
 		clearTimeout(textFadeTimer);
 		$('.cinquena-video-layer').css({ opacity: 0, 'pointer-events': 'none' });
-		$('.cinquena-text-layer').css('opacity', 1);
+		expandText();
 		if (typeof pauseAll === 'function') { pauseAll(); }
 	}
+
+	$(document).on('click', '.cinquena-text-close', collapseText);
+	$(document).on('click', '.cinquena-text-open', expandText);
 
 	function reapplyActiveIw() {
 		if (!activeIwTitle) return;
