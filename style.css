@@ -248,9 +248,8 @@ Required WordPress CSS
 }
 
 .cinquena-text-layer > .row {
-	background: #000;
+	background: rgba(0, 0, 0, 0.6);
 	padding: 5rem;
-	opacity: 0.6;
 }
 
 .cinquena-video-layer {
@@ -264,20 +263,6 @@ Required WordPress CSS
 	transition: opacity 1s ease;
 	background-color: #000;
 	pointer-events: none;
-}
-
-/* Botó play */
-.play-cinquena {
-	margin-top: 60px;
-	cursor: pointer;
-	font-size: 56px;
-	color: #e4e1ce;
-	line-height: 1;
-	transition: color 0.2s ease;
-}
-
-.play-cinquena:hover {
-	color: #fff;
 }
 
 .cinquena-video-layer .poi-video,

@@ -110,9 +110,6 @@ body {
 									<div class="text_resum"><?php the_sub_field('description'); ?></div>
 								</div>
 								<div class="col-md-1"></div>
-								<div class="col-md-12 text-center">
-									<div class="play-cinquena"><i class="fa fa-play-circle-o"></i></div>
-								</div>
 							</div>
 						<?php endwhile; ?>
 					<?php endif; ?>
@@ -430,11 +427,6 @@ $(document).ready(function(){
 		} else {
 			resetVideoSequence();
 		}
-	});
-
-	// Click al botó play → transició immediata a vídeo
-	$(document).on('click', '.play-cinquena', function() {
-		triggerVideoTransition();
 	});
 
 	// Click a qualsevol lloc del vídeo (fora dels controls) → pausa/reprèn
