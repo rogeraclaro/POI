@@ -896,10 +896,11 @@ div[id^="video"] .plyr {
 
 .text_resum {
 	font-family: 'agltmedium';
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 28px;
 	color: #e4e1ce;
 	padding-left: 0px;
+	margin-top: -1px;
 }
 
 #fletxafixe01,
